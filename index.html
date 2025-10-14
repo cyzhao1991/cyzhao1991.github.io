@@ -1,15 +1,372 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Chenyang Zhao</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Elliot J. Crowley</title>
+
+  <meta charset="utf-8" />
+
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <!--<link rel="icon" href="/resources/jt.png">!-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    body {
+      font-family: 'DM Sans', sans-serif !important;
+    }
+
+
+    a:link,
+    a:hover,
+    a:visited,
+    a:active {
+      color: #51658C !important;
+    }
+
+    .nodecor:link,
+    .nodecor:hover,
+    .nodecor:visited,
+    .nodecor:active {
+      color: #171C26 !important;
+      text-decoration: none;
+    }
+
+    .boldtext {
+      font-weight: 700 !important;
+    }
+
+    .semiboldtext {
+      font-weight: 500 !important;
+    }
+
+    .smalltext {
+      font-size: .8em;
+    }
+
+    #name {
+      font-size: 2.6em;
+      line-height: 1em;
+      margin-top: .5em;
+      margin-bottom: .2em;
+    }
+
+    #title {
+      font-size: 1.2em;
+    }
+
+    #email {
+      font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+      font-size: .9em;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+
+    #picpad {
+      margin-top: .5em;
+      margin-bottom: .5em;
+    }
+
+    #overview {
+      font-size: 1.2em;
+    }
+
+    #projects {
+      font-size: 1.1em;
+    }
+
+    #projects li {
+      margin-top: .5em;
+    }
+
+    @media only screen and (max-width: 900px) {
+      #fadeshow1 {
+        display: none;
+      }
+    }
+
+    .content {
+      margin: auto;
+      max-width: 1000px;
+      padding: 10px;
+    }
+
+    .subcontent {
+      margin-top: 1em;
+      margin-bottom: 1.5em;
+    }
+
+    .pubtitle {
+      font-weight: 500;
+    }
+
+
+    .pubyear {
+      margin-top: 12px;
+      clear: both;
+      font-size: 1.2em;
+      color: 222;
+    }
+
+    .pubaward {
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .authlist {
+      font-size: 16px;
+      color: #8697A6;
+    }
+
+    .conference {
+      font-size: 16px;
+      color: #2F3D59;
+      font-weight: bold;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #51658C;
+      font-weight: bold;
+    }
+
+    .date {
+      font-size: 12px;
+    }
+
+    .abstract {
+      font-size: 15px;
+      color: #171C26;
+    }
+  </style>
+  <script>
+    function loadTime() {
+        document.getElementById("demo").innerHTML = document.lastModified;
+    }
+</script>
 </head>
-<body>
-  <h1>Hello, I'm Chenyang Zhao</h1>
-  <p>Postdoctoral Research Fellow @ Trinity College Dublin</p>
-  <p>Research: Reinforcement Learning, Agentic AI, LLM-based systems</p>
-  <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> |
-  <a href="https://github.com/USERNAME">GitHub</a>
-</body>
+
+<body onload="loadTime();">
+
+  <div class="content" style="margin-top: 5.5rem;">
+
+    <div class="row">
+      <div class="col-sm-offset-5 col-sm-8">
+        <div id="name">
+          <div class="semiboldtext">Elliot J. Crowley</div>
+        </div>
+        <div id="title" style="margin-top: 1.5rem;">
+
+          <div style="margin-top: 1.2rem;"></div>
+          <div><a href="mailto:zhaoc4@tcd.ie"><img src="resources/mail.svg" style="width:30px;height:30px;margin-bottom:0.2em;"><p style="color: #171C26;display: inline">  Mail</p></a></div>
+          <div style="margin-top: 0.3rem;"></div>
+
+
+          <div><a href="https://scholar.google.com/citations?user=5fnNAw0AAAAJ&hl=en"><img src="resources/scholar.svg" style="width:30px;height:30px;margin-bottom:0.2em;"><p style="color: #171C26;display: inline">  Scholar</p></a></div>
+          
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <img class="float-right" src="resources/me.jpg" id="fadeshow1" alt="pdb" id="pdb-pic"
+          style="height: 250px; margin-top: 20px;">
+      </div>
+
+    </div>
+
+    <div class="col-sm-offset-2">
+      <div id="overview" style="margin-top: 1.5rem;">
+
+        <hr>
+        <p>
+ I am a Senior Lecturer (Associate Professor) at the School of Engineering, University of Edinburgh. I co-lead the <a href="https://www.bayeswatch.com">Bayesian and Neural Systems</a> research group.
+        </p>
+
+        <p>
+          My research interests include:
+          <ul>
+            <li> simplifying machine learning
+            <li> automated machine learning
+            <li> low-resource deep learning    
+            <li> engineering applications of machine learning
+          </ul>
+        </p>
+
+        <p>
+I have an MEng in Engineering Science and a DPhil (PhD), both from the University of Oxford. My DPhil was on "Visual recognition in Art using Machine Learning" with Andrew Zisserman in the VGG group. After my DPhil, I was a postdoc at the School of Informatics in Edinburgh with Amos Storkey.</p>
+
+<p></p>I hold an EPSRC New Investigator Award. I am an investigator on the dAIEdge Horizon Network and a co-investigator on the EPSRC AI Hub for Causality in Healthcare AI.</p>
+
+<p></p>I am Programme Manager for Electronics and Electrical Engineering at Edinburgh and I have written a <a href="https://elliotjcrowley.com/daml.html">machine learning course</a>. </p>
+
+   
+    
+    </div>
+    </div>
+
+    <div class="col-sm-offset-2" >
+       <div id="overview" style="margin-top: 1.5rem;">
+
+            <div>
+        <h3>Team</h3>
+        Current:
+              <ul>
+
+                   <li><a href="https://miquel-espinosa.github.io">Miguel Espinosa</a> (PhD student)</li>
+                   <li><a href="https://shiwenqin.github.io">Shiwen Qin</a> (PhD student, with Shay Cohen)</a></li>
+                  <li><a href="https://cameronbarker.uk">Cameron Barker</a> (PhD student, with Henry Gouk) </li>
+                  <li>Thomas Woehrle (PhD student) </li>
+                  </ul>
+              Former:
+              <ul>
+            <li><a href="https://linusericsson.github.io">Linus Ericsson</a> (Postdoc), now an Assistant Professor at Glasgow</li>       
+          <li> <a href="https://chenhongyiyang.github.io">Chenhongyi Yang</a> (PhD student), now a Research Scientist at Meta</li>
+          <li> <a href="https://jack-willturner.github.io">Jack Turner</a> (PhD student, with Michael O'Boyle), now a Software Engineer at Qualcomm</li>
+
+                  </ul>
+
+If you are interested in starting a PhD with me, then please send me a targeted, nonverbose email (that doesn't read like it came out of an LLM) with your CV and a 1 page research proposal. At present, there are good sources of funding available for UK students e.g. through CDTs.
+              
+      </div>
+       </div>
+         
+
+
+    <div class="col-sm-offset-2" style="margin-bottom:6.5rem;">
+
+      <div style="margin-top: 3.5rem;"></div>
+      <div>
+        <h3>Carefully Selected Publications</h4>
+
+            <div id="publist">
+              <div class="container card">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img src="resources/training-free-architecture.jpg" id="fadeshow1" style="width:220px;margin-top:-0.4em;">
+                  </div>
+                  <div class="col-sm-9">
+                    <style>
+                      p {
+                        margin-top: 0em ;
+                        margin-bottom: 0.4em ;
+                      }
+                    </style>
+                      <p class="title">
+                        <a class="pubtitle" href="https://arxiv.org/abs/2507.02798" style="font-weight: bold;">No time to train! Training-Free Reference-Based Instance Segmentation</a>
+                      </p>
+                    <p class="conference">Preprint          <a class="pubtitle" href="https://github.com/miquel-espinosa/no-time-to-train" style="font-weight: bold;"><img src="resources/github.svg" style="margin-bottom: 0.3em;width:28px;height:28px;"></a></p>
+                    <p class="authlist">Miguel Espinosa, Chenhongyi Yang, Linus Ericsson, Steven McDonagh, Elliot J. Crowley</p>
+                    <p class="abstract">
+                                We combine foundational models to perform instance segmentation based on a reference image without any training.       </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        
+
+                  <div id="publist">
+            <div class="container card">
+              <div class="row">
+                <div class="col-sm-3">
+                  <img src="resources/surrogates.png" id="fadeshow1" style="width:220px;margin-top:1.8em;">
+                </div>
+                <div class="col-sm-9">
+                  <style>
+                    p {
+                      margin-top: 0em ;
+                      margin-bottom: 0.4em ;
+                    }
+                  </style>
+                    <p class="title">
+                      <a class="pubtitle" href="https://arxiv.org/abs/2504.12971" style="font-weight: bold;">Transferrable Surrogates in Expressive Neural Architecture Search Spaces</a>
+                    </p>
+                    <p class="conference"> AutoML 2025 <a class="pubtitle" href="https://github.com/shiwenqin/transferrable-surrogates" style="font-weight: bold;"><img src="resources/github.svg" style="margin-bottom: 0.3em;width:28px;height:28px;"></a></p>
+                  <p class="authlist">Shiwen Qin, Gabriela Kadlecová, Martin Pilát, Shay B. Cohen, Roman Neruda, Elliot J. Crowley, Jovita Lukasik, Linus Ericsson</p>
+                  <p class="abstract">
+                   We accelerate NAS in expressive search spaces by using transferrable performance prediction methods.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        
+                  <div id="publist">
+            <div class="container card">
+              <div class="row">
+                <div class="col-sm-3">
+                  <img src="resources/isabella_sota_arch.png" id="fadeshow1" style="width:220px;margin-top:1.8em;">
+                </div>
+                <div class="col-sm-9">
+                  <style>
+                    p {
+                      margin-top: 0em ;
+                      margin-bottom: 0.4em ;
+                    }
+                  </style>
+                    <p class="title">
+                      <a class="pubtitle" href="https://arxiv.org/abs/2405.20838" style="font-weight: bold;">einspace: Searching for Neural Architectures from Fundamental Operations</a>
+                    </p>
+                    <p class="conference"> NeurIPS 2024 <a class="pubtitle" href="https://github.com/linusericsson/einspace" style="font-weight: bold;"><img src="resources/github.svg" style="margin-bottom: 0.3em;width:28px;height:28px;"></a></p>
+                  <p class="authlist">Linus Ericsson, Miguel Espinosa, Chenhongyi Yang, Antreas Antoniou, Amos Storkey, Shay B. Cohen, Steven McDonagh, Elliot J. Crowley</p>
+                  <p class="abstract">
+                   A new expressive search space for neural architecture search based on a probabilistic context-free grammar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+                    <div id="publist">
+            <div class="container card">
+              <div class="row">
+                <div class="col-sm-3">
+                  <img src="resources/plainmamba.png" id="fadeshow1" style="width:220px;margin-top:1.8em;">
+                </div>
+                <div class="col-sm-9">
+                  <style>
+                    p {
+                      margin-top: 0em ;
+                      margin-bottom: 0.4em ;
+                    }
+                  </style>
+                    <p class="title">
+                      <a class="pubtitle" href="https://arxiv.org/abs/2403.17695" style="font-weight: bold;">PlainMamba: Improving Non-Hierarchical Mamba in Visual Recognition</a>
+                    </p>
+                    <p class="conference"> BMVC 2024 <a class="pubtitle" href="https://github.com/ChenhongyiYang/PlainMamba" style="font-weight: bold;"><img src="resources/github.svg" style="margin-bottom: 0.3em;width:28px;height:28px;"></a></p>
+                  <p class="authlist">Chenhongyi Yang, Zehui Chen, Miguel Espinosa, Linus Ericsson, Zhenyu Wang, Jiaming Liu, Elliot J. Crowley</p>
+                  <p class="abstract">
+                   A simple non-hierarchical state space model designed for general visual recognition.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <p>Thanks to <a href="https://jack-willturner.github.io/">Jack Turner</a> and <a href="https://chenhongyiyang.com">Chenhongyi Yang</a> for the website template.</p>
+  </div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
 </html>
